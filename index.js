@@ -14,3 +14,18 @@ function increaseRankBy(n){
     rank[i].innerHTML = (parseInt(num) + parseInt(n)).toString();
   }
 }
+
+function deepestChild(){
+  var current = document.querySelectorAll('div#grand-node');
+  while(current){
+    //if it passes return 
+    if(current.children[0]){
+      current = current.children[0];
+    }else{
+      return current;
+    }
+    //if it doesn't then shift and redo from beginning of while
+    
+  }
+  
+}
